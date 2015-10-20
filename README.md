@@ -1,0 +1,1 @@
+# amasugiru.github.io
