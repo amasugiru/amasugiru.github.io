@@ -1,0 +1,47 @@
+@charset: "utf-8";
+
+
+#slide {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/camera.jpg), url(../images/chikyugi.jpg), url(../images/compass.jpg), url(../images/tokei1.jpg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  animation-name: slidein;
+  animation-delay: 1s;
+  animation-duration: 8s;
+  animation-iteration-count: 2;
+}
+
+
+@keyframes slidein {
+  0% {
+    background-image: url(../images/camera.jpg);
+    /*transform: translate(100px,100px)*/
+    /*transform: scale(0.01)*/
+    margin-left: 0%;
+  }
+  25% {
+    background-image: url(../images/chikyugi.jpg);
+    transform: rotate(300deg);
+  }
+  50% {
+    background-image: url(../images/compass.jpg);
+    /*transform: rotate(40deg);*/
+    transform: translate(100px,100px)
+  }
+  75% {
+    background-image: url(../images/tokei1.jpg);
+    /*transform: rotate(-100deg);*/
+    margin-left: 35%;
+    /*transform: translate(100px,100px)*/
+  }
+  100% {
+    background-image: url(../images/camera.jpg);
+    /*transform: translate(100px,100px)*/
+    /*transform: scale(0.01)*/
+    transform: scale(0.01)
+  }
+}
