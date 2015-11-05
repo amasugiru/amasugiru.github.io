@@ -1,0 +1,157 @@
+﻿@charset "utf-8";
+
+/* 基本レイアウト ここから↓ */
+
+body {
+  background-image: url(..//images/brick-957513__180.jpg);
+  background-color: #f3f2e9;
+  color: #ffffff;
+  font-family: 'Weltron Urban';
+  font-size: 130.0%;
+  line-height: 1.5;
+}
+
+header, nav, #graphic, #select, #contact, #office, footer {
+  margin: 0 auto 0 auto;
+  width: 840px;
+}
+/*header h1 {
+  margin: 0 0 26px 0;
+  padding-top: 28px;
+  text-align: center;
+}*/
+
+#graphic {
+  width: 840px;
+  height: 560px;
+  margin: 0 auto 0 auto;
+}
+#graphic ul {
+  position: relative;
+  list-style: none;
+  padding-left: 0;
+}
+#graphic ul li {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+#graphic ul li.now {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+}
+
+/*#graphic {
+  list-style-type: none;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+#graphic a {
+  height: 560px;
+  display: block;
+  list-style-type: none;
+}*/
+/*#graphic:hover img{
+    opacity:0.8;
+    -moz-opacity:0.8;
+    filter:alpha(opacity = 80);
+}*/
+
+nav ul {
+  overflow: hidden;
+  margin: 0 0 20px 0;
+  padding-left: 0;
+  list-style-type: none;
+/*  background-color: #ffffff;*/
+  }
+nav ul li {
+  float: left;
+  width: 210px;
+}
+nav ul li a {
+  overflow: hidden;
+  display: block;
+  padding-top: 44px;
+  height: 0;
+}
+nav ul li#nav_top a {
+  background-image: url(../images/nav1.png);
+}
+nav ul li#nav_select a {
+  background-image: url(../images/nav2.png);
+}
+nav ul li#nav_contact a {
+  background-image: url(../images/nav3.png);
+}
+nav ul li#nav_office a {
+  background-image: url(../images/nav4.png);
+}
+
+#concept #nav_top a,
+#plan #nav_select a,
+#fair #nav_contact a,
+#contact #nav_office a,
+nav ul li a:hover {
+  background-position: 0 -45px;
+}
+.bnr_inner a p img:hover {
+  opacity: 0.8;
+}
+
+#map {
+  background-color: #EEEEEE;
+}
+
+/* 基本レイアウト ここまで↑ */
+
+/* 「お問い合わせ」 ここから↓ */
+
+input[type="text"] {
+  width: 200px;
+}
+input[type="email"] {
+  width: 300px;
+}
+textarea {
+  width: 420px;
+  height: 115px;
+  overflow-y: scroll;
+}
+
+/* 「お問い合わせ」 ここまで↑ */
+
+/* 「逸品」 ここから↓ */
+
+#ippin {
+  border-top:1px solid #ffffff;
+  border-bottom:1px solid #ffffff;
+}
+
+.image_1 {
+  float: left;
+  margin-right: 25px;
+}
+.image_2 {
+  float: left;
+  margin-right: 25px;
+}
+
+/* 「逸品」 ここまで↑ */
+
+#toi {
+  border-top:1px solid #ffffff;
+  border-bottom:1px solid #ffffff;
+}
+
+#an {
+  border-top:1px solid #ffffff;
+  border-bottom:1px solid #ffffff;
+}
